@@ -8,7 +8,7 @@
     --transition-200: 200ms ease-in-out; 
     --transition-300: 300ms ease-in-out; 
     --rotate-360: rotate(360deg);
-    /* color-scheme: dark light; */
+    color-scheme: dark light;
 }
 /* DashBoard  */
 .dash-main, .foods-main {
