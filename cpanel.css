@@ -1,0 +1,95 @@
+@import url(style.css);
+:root {
+    --color-blue: #063970;
+    --color-black: #121212;
+    --color-white: #FFFFFF;
+    --color-red: #dc3545;
+    --color-green: #28a745;
+    --transition-200: 200ms ease-in-out; 
+    --transition-300: 300ms ease-in-out; 
+    --rotate-360: rotate(360deg);
+    /* color-scheme: dark light; */
+}
+/* DashBoard  */
+.dash-main, .foods-main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+.Dialog {
+    margin: auto;
+    padding: 1rem;
+    border: none;
+    width: 50%;
+    opacity: 100%;
+    transition: opacity var(--transition-300);
+
+}
+.CurrentOrders:first-child {
+    text-align: center;
+}
+.stats {
+    margin: 1rem 1rem;
+    border-color: inherit;
+    padding: 1rem;
+    border-radius: 10px;
+}
+/* Foods */
+.table-foods {
+    margin-top: 2%;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table-foods td, .table-foods th {
+    border: 1px solid;
+    padding: 0.5rem;
+}
+/* Dashboard Navbar  */
+.navbar {
+    position: fixed;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    width: 5rem;
+    height: 100vh;
+    transition: width 300ms ease;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item {
+    width: 100%;
+}
+.nav-item:first-child {
+    background-color: var(--color-black);
+}
+.nav-item:hover{
+    background-color: var(--color-black);
+    transition: var(--transition-300);
+}
+.nav-link {
+    height: 5rem;
+}
+.link-text {
+    display: none;
+}
+.nav-link i {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+.navbar:hover {
+    width: 16rem;
+}
+.navbar:hover .link-text {
+    display: block;
+}
+.nav-link i:hover {
+    transform: var(--rotate-360);
+    transition: var(--transition-200);
+}
+.navbar:hover .fa-arrow-circle-left {
+    transform: rotate(180deg);
+    transition: var(--transition-300);
+}
+

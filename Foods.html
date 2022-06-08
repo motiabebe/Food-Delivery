@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="color-scheme" content="dark light"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="cpanel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex">
+                        <i class="fa fa-2xl fa-arrow-circle-left"></i>
+                        <span class="link-text">Welcome</span>    
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="DashBoard.html" class="nav-link flex">
+                        <i class="fa fa-2xl fa-dashboard"></i>
+                        <span class="link-text">DashBoard</span>    
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Foods.html" class="nav-link flex">
+                        <i class="fa fa-2xl fa-utensils"></i>
+                        <span class="link-text">Foods</span>    
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex">
+                        <i class="fa fa-2xl fa-layer-group"></i>
+                        <span class="link-text">Restaurants</span>    
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex">
+                        <i class="fa fa-2xl fa-user-astronaut"></i>
+                        <span class="link-text">Users</span>    
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex">
+                        <i class="fa fa-2xl fa-cube"></i>
+                        <span class="link-text">Delivery</span>    
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link flex">
+                        <i class="fa fa-2xl fa-gear"></i>
+                        <span class="link-text">Settings</span>    
+                    </a>
+                </li>
+
+                <li class="nav-item nav-last">
+                    <a href="#" class="nav-link flex">
+                        <i class="fa fa-2xl fa-power-off"></i>
+                        <span class="link-text">Off</span>    
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dash-main">
+
+        <h2>Foods</h2>
+
+        <div class="flex flex-row flex-end ">
+            <h3>Showing Items 1 of 200</h3>
+            <form action="" method="get">
+                <input type="text" class="input" name="" id="">
+                <button class="btn bg-black round">Search</button>
+            </form>
+
+        </div>
+
+            <table class="table-foods">
+                <!-- Edit Item Dialog -->
+                <dialog id="Edit" class="Dialog bg-green">
+                    <div class="dialog-button flex flex-end">
+                        <button class="btn btn-s bg-white round" onclick="CloseEdit()">Close</button>
+                    </div>
+                    <div class="dialog-title center ">
+                        <h2 class="">Edit Item Details</h2>
+                    </div>
+                    <div class="input-group flex flex-row">
+                        <label for="">Name: </label>
+                        <input type="text" name="" id="">
+                        <label for="">Restaurant: </label>
+                        <input type="text" name="" id="">
+                        <label for="">Price: </label>
+                        <input type="text" name="" id="">
+                        <label for="">Image 1</label>
+                        <input type="file" name="" id="">
+                        <label for="">Image 2</label>
+                        <input type="file" name="" id="">
+                    </div>
+
+    
+                </dialog>
+                
+                <tr class="bg-blue">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Restaurant</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>Noodles</th>
+                    <th>Chanoly</th>
+                    <th>40</th>
+                    <th><button class="btn btn-s bg-green round" onclick="OpenEdit()"><i class="fa fa-edit"></i>Edit</button></th>
+                    <th><button class="btn btn-s bg-red round"><i class="fa fa-delete-left"></i>Delete</button></th>
+                </tr>
+            </table>
+
+        </main>
+<script src="js/main.js"></script>
+</body>
+</html>
