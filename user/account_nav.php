@@ -1,0 +1,12 @@
+<button class="btn round">
+    <a href="editprofile.php">
+    <i class="fa-solid fa-pen-to-square"></i>Edit Profile</a></button>
+<button class="btn round">
+    <a href="myorders.php">
+    <i class="fa-solid fa-list"></i>My Orders</a></button>
+<button class="btn round">
+    <a href="changepassword.php">
+    <i class="fa-solid fa-lock"></i>Change Password</a></button>
+<button class="btn round">
+    <a href="logout.php">
+    <i class="fa-solid fa-right-from-bracket"></i>Logout</a></button>
