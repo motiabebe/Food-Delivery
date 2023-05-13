@@ -1,0 +1,164 @@
+@import url(main.css);
+:root {
+    --color-blue: #063970;
+    --color-black: #121212;
+    --color-white: #FFFFFF;
+    --color-red: #dc3545;
+    --color-green: #28a745;
+    --transition-200: 200ms ease-in-out; 
+    --transition-300: 300ms ease-in-out; 
+    --rotate-360: rotate(360deg);
+    /* color-scheme: dark light; */
+}
+/* DashBoard  */
+.dash-main, .foods-main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+.top-bar {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+.Dialog {
+    margin: auto;
+    padding: 1rem;
+    border: none;
+    max-width: fit-content;
+}
+/* Foods */
+.table {
+    margin-top: 2%;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table td, .table th {
+    border: 1px solid;
+    padding: 0.5rem;
+}
+/* Dashboard Navbar  */
+.navbar {
+    position: fixed;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    width: 5rem;
+    height: 100vh;
+    transition: width 300ms ease;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item {
+    width: 100%;
+}
+.nav-item:first-child {
+    background-color: var(--color-black);
+}
+.nav-item:hover{
+    background-color: var(--color-black);
+    transition: var(--transition-300);
+}
+.nav-link {
+    height: 5rem;
+}
+.link-text {
+    display: none;
+}
+.nav-link i {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+.navbar:hover {
+    width: 16rem;
+}
+.navbar:hover .link-text {
+    display: block;
+}
+.nav-link i:hover {
+    transform: var(--rotate-360);
+    transition: var(--transition-200);
+}
+.navbar:hover .fa-arrow-circle-left {
+    transform: rotate(180deg);
+    transition: var(--transition-300);
+}
+
+/* input group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.input-group label {
+    margin-right: 1rem;
+}
+.input-group input {
+    width: min-content;
+}
+.input-group textarea {
+    width: min-content;
+}
+/*.input-group button {
+    margin-left: 1rem;
+}
+.input-group button:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    transition: var(--transition-300);
+}
+.input-group button:focus {
+    outline: none;
+} */
+
+
+
+/* media query for phone */
+@media only screen and (max-width: 600px) {
+    .top-bar {
+        margin-left: 0;
+        justify-content: center;
+    }
+    .navbar {
+    /* make the navbar at the bottom */    
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
+    }
+    .navbar:hover {
+        width: 100%;
+    }
+    .nav-list {
+        flex-direction: row;
+    }
+    .nav-item:nth-child(1) {
+        display: none;
+    }
+    /* .nav-link i {
+        font-size: 2rem;
+    } */
+    .nav-item {
+        width: 3.3rem;
+    }
+    .navbar:hover .link-text {
+        display: none;
+    }
+    .dash-main {
+        margin: auto;
+        padding-top: 0;
+    }
+    .dash-main .card:nth-child(1) {
+        grid-column: span 2;
+    }
+    .dash-main .card:nth-child(2) {
+        grid-column: span 2;
+    }
+    .dash-main .card:nth-child(3) {
+        grid-column: span 2;
+    }
+    .dash-main .card:nth-child(4) {
+        grid-column: span 2;
+    }
+}
